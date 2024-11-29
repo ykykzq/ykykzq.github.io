@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "基于LoongArch-32指令集的流水线CPU"
+excerpt: "使用Verilog与Vivado设计并实现了一款功能基本完备的CPU<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
