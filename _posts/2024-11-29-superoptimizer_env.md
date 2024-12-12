@@ -9,9 +9,9 @@ tags:
 
 
 关于超级优化项目环境配置的详细文档
-# 超级优化环境配置
+## 超级优化环境配置
 
-## 1. 安装Java环境
+### 1. 安装Java环境
 
 Java版本需大于等于Java11，可以利用以下指令安装
 
@@ -19,7 +19,7 @@ Java版本需大于等于Java11，可以利用以下指令安装
 sudo apt install openjdk-11-jdk
 ```
 
-## 2. 安装 `libcurl` 开发包
+### 2. 安装 `libcurl` 开发包
 
 项目依赖`CURL`库，可以通过以下指令安装
 
@@ -27,7 +27,7 @@ sudo apt install openjdk-11-jdk
 sudo apt install libcurl4-openssl-dev
 ```
 
-## 3. 安装Boost库
+### 3. 安装Boost库
 
 项目依赖于`Boost`库，可以通过以下指令安装
 
@@ -35,7 +35,7 @@ sudo apt install libcurl4-openssl-dev
 sudo apt install libboost-all-dev
 ```
 
-## 4. 安装Z3
+### 4. 安装Z3
 
 从z3的仓库下载源代码并安装：
 
@@ -64,7 +64,7 @@ make
 sudo make install
 ```
 
-## 5. 编译项目
+### 5. 编译项目
 
 初次编译之前，应当执行如下指令更新Submodules：
 
