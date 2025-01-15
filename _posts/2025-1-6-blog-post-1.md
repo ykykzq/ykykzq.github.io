@@ -1,7 +1,7 @@
 ---
 title: '2025.01.06-2025.01.12 学习内容'
-date: 2024-12-30
-permalink: /posts/2024/1/blog-post-1/
+date: 2025-01-06
+permalink: /posts/2025/1/blog-post-1/
 tags:
   - Arm
   - 超级优化
@@ -95,8 +95,7 @@ TEST_F(ExecutorTestFixture, St1)
     将 v0 寄存器的 8 个字节元素存储到 `x0` 指向的内存中的位置。
   */
   BasicBlock bb1({
-      // TODO: `.8b` 可能需要特殊表示
-      TInstNodeHandler(Inst::kIdSt1_v, { VecV(0), Mem(GpX(0))}),
+      TInstNodeHandler(Inst::kIdSt1_v, { VecV(0).b8(), Mem(GpX(0))}),
   });
   Program p;
   p.addBlock(make_shared<BasicBlock>(bb1));
