@@ -3,6 +3,12 @@
    ========================================================================== */
 
 $(document).ready(function(){
+<<<<<<< HEAD
+=======
+  // These should be the same as the settings in _variables.scss
+  scssLarge = 925; // pixels
+
+>>>>>>> template/master
   // Sticky footer
   var bumpIt = function() {
       $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
@@ -20,6 +26,7 @@ $(document).ready(function(){
       bumpIt();
     }
   }, 250);
+<<<<<<< HEAD
   // FitVids init
   $("#main").fitVids();
 
@@ -57,6 +64,11 @@ $(document).ready(function(){
   $(window).resize(function(){
     stickySideBar();
   });
+=======
+  
+  // FitVids init
+  fitvids();
+>>>>>>> template/master
 
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function() {
@@ -64,6 +76,16 @@ $(document).ready(function(){
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
+<<<<<<< HEAD
+=======
+  // Restore the follow menu if toggled on a window resize
+  jQuery(window).on('resize', function() {
+    if ($('.author__urls.social-icons').css('display') == 'none' && $(window).width() >= scssLarge) {
+      $(".author__urls").css('display', 'block')
+    }
+  });    
+
+>>>>>>> template/master
   // init smooth scroll, this needs to be slightly more than then fixed masthead height
   $("a").smoothScroll({offset: -65});
 
