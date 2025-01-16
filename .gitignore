@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-# Ignore the contents of the _site directory
-_site/
-=======
 # Ignore the contents of the _site directory and other cache directories
 _site/
 .sass-cache/
->>>>>>> template/master
 
 # Ignore the directory for local files during development
 local/
